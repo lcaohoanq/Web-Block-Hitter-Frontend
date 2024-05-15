@@ -1,0 +1,26 @@
+@import '../abstracts/mixins';
+
+.input-container {
+  @include setPadding(0, 50px, 0, 50px);
+
+  input {
+    border: none;
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    text-indent: 10px;
+    background-color: #f0f0f0;
+
+    &:hover {
+      background-color: #e4e4e4;
+    }
+  }
+
+  #username-login,
+  #password-login,
+  #username-register,
+  #password-register,
+  #confirmPassword {
+    @include dimensions(250px, 50px);
+  }
+}

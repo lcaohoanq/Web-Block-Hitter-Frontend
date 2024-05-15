@@ -1,0 +1,46 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
+.Button {
+  @include flex-column-container;
+
+  .Login-Register-Container {
+    @include flex-row-container;
+
+    .card_button a {
+      @include button-styles-sugar($button-home-width, $button-home-height);
+      @include text-styles(white, 3rem, bold);
+      &.log {
+        @include button-press-effect(
+          $login-background-color,
+          $login-border-color,
+          $login-shadow-color
+        );
+      }
+
+      &.reg {
+        @include button-press-effect(
+          $register-background-color,
+          $register-border-color,
+          $register-shadow-color
+        );
+      }
+    }
+  }
+
+  .Continue-Container {
+    @include flex-row-container;
+
+    .card_button a {
+      @include button-styles-sugar(27vw, 10vh);
+      @include text-styles(white, 3rem, bold);
+      &.continue {
+        @include button-press-effect(
+          $continue-background-color,
+          $continue-border-color,
+          $continue-shadow-color
+        );
+      }
+    }
+  }
+}

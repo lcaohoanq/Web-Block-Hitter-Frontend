@@ -1,0 +1,64 @@
+@import '../abstracts/mixins';
+
+.GameOver {
+  header {
+    margin-bottom: 2vh;
+  }
+
+  main {
+    .Score {
+      text-align: center;
+      font-size: 3vw;
+      margin-bottom: 6vh;
+    }
+
+    .Direction {
+      width: 100%;
+      margin-bottom: 5vw;
+
+      .card_button_gameover {
+        background-color: $main-color;
+        @include setBorderRadius(10px);
+
+        a {
+          color: white;
+          @include setBorderRadius(10px);
+        }
+
+        a#playAgain {
+          @include flex-row-container;
+          background-color: $main-color;
+
+          &:hover {
+            background-color: $main-color;
+            transition: $button-transition;
+          }
+        }
+
+        a#highScore {
+          @include flex-row-container;
+          background-color: $register-background-color;
+
+          &:hover {
+            background-color: $register-background-color;
+            transition: $button-transition;
+          }
+        }
+
+        a#mainMenu {
+          @include flex-row-container;
+          background-color: $continue-background-color;
+
+          &:hover {
+            background-color: $continue-background-color;
+            transition: $button-transition;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    margin-top: 4vh;
+  }
+}

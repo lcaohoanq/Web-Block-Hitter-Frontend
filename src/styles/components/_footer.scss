@@ -1,0 +1,13 @@
+@import '../abstracts/mixins';
+
+footer {
+  @include flex-column-container;
+  gap: 10px;
+  padding: 1rem;
+  color: #19b719;
+  a {
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}

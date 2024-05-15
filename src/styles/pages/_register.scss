@@ -1,0 +1,19 @@
+@import '../base/base';
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.policy {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  input {
+    @include dimensions(15px, 30px);
+    margin-right: 10px;
+  }
+
+  p,
+  a {
+    font-size: 15px;
+  }
+}

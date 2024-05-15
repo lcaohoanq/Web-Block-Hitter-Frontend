@@ -1,0 +1,22 @@
+body#dark {
+  background-color: #121212;
+
+  .App {
+    background-color: #121212;
+
+    footer a {
+      color: #ffffff;
+    }
+  }
+
+  .select-ctr {
+    color: white;
+    background-color: #121212;
+  }
+
+  .GameOver {
+    .Score {
+      color: white;
+    }
+  }
+}

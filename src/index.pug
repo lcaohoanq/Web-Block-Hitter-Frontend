@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(href="./assets/images/favicon.ico", rel="icon")
+    title Home
+  body#dark
+    .Home
+      header 
+        h1 Block Hitter
+      section.Body 
+          section.Logo 
+          section.Button 
+            .Login-Register-Container 
+              .card_button 
+                a.log(href='./templates/login.html') Login
+              .card_button
+                a.reg(href='./templates/register.html') Register
+            .Continue-Container 
+              .card_button 
+                a.continue(href='./templates/404.html') Continue without login
+      footer
+        p.App-link 
+          | © 2024 Block Hitter Game. All rights reserved.
